@@ -1,0 +1,15 @@
+Modus Tollens
+
+# Modus Tollens 
+# Regla: si hay internet, el ping responde.
+# Observación: hoy el ping NO respondió.
+
+Q = False  # "ping_responde" -> no Q
+
+# Si (P -> Q) y no Q, entonces no P.
+if Q is False:
+    hay_internet = False   # conclusión: no P
+else:
+    hay_internet = None    # no puedo asegurar nada sobre P en este caso
+
+print(f"[MT] Q (ping_responde)={Q} | Conclusión ¬P (no hay internet)={hay_internet is False}")
