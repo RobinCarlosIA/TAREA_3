@@ -1,0 +1,15 @@
+Modus Ponens
+
+# Modus Ponens 
+# Regla: si la temperatura pasa de 80°C, el motor se apaga.
+
+temperatura_c = 85  # cámbialo para probar
+P = (temperatura_c > 80)  # condición (antecedente)
+
+# Si P -> Q, y P es True, entonces Q debe ser True.
+if P:
+    motor_apagado = True   # Q (consecuencia)
+else:
+    motor_apagado = False
+
+print(f"[MP] temperatura={temperatura_c}°C | P={P} | Conclusión Q (motor_apagado)={motor_apagado}")
